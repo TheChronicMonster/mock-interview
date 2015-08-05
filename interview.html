@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>mock-interview</title>
+  </head>
+  <body>
+    <h1>What is the most influential book or blog post you've read regarding front-end development</h1>
+    <p>
+      The most influential blog post I've read about front-end development
+      is a post about achieving a better way to learn and to teach code.
+      The author tears into Khan Academy's method of telling students to jump
+      into the code and see what happens! He suggests a language that allows
+      programmers to see their actions in real time, and compares coding to an
+      art. "The programmer does not create because he can't see what he's doing
+      but creates inspite of the fact that he cannot see. This is a testament
+      to the power of the desire to create. But we should not be satisfied by this
+      but rather work to facilitate the power to create through code and make
+      it as accessable as possible for all people." -I paraphrase as my memory serves.
+      This article moved me and as I learn to code I keep his comments in my mind.
+      It is my desire to find a better way to teach new programmers, and to one day
+      create a language that will enable adults to create object oriented programs
+      that offer real-time insights.
+      <h1>If you could master one technology this year, what would it be?</h1>
+      <p>
+        There are so many technologies to master. It's really hard to narrow down to one
+        because I have so much to learn, and suspect I always will, but I'd like to master
+        JavaScript. That's so basic. But it's fundamental to everything else that I'm interested in.
+        Things like typescript and Angular 1.x and 2, Service Workers or Web Components.
+        Mastering JavaScript is a key that opens doors everywhere I look.
+      </p>
+      <h1>Describe any front-end application framework. How does it work? What are the upsides and downsides?</h1>
+      <p>
+        I recently used knockoutJS and the model-view-viewmodel to create a scalable single-page application
+        that pulled JSON responses from FourSquare and rendered information into a Google Maps page. The MVVM
+        framework of knockoutJS works like a telephone system. All lines are connected to a central hub that
+        communicates with each end. No model or view speaks directly one to the other. All connections go through the
+        viewmodel. This allows apps to scale up and avoids spaghetti code. The MVVM worked by calling data-bind in the view (html).
+        This activates the model (javascript) and works the "magic" on the monitor.
+      </p>
+      <h1>Write a function that takes another function as an argument and returns a memorized version of that function.
+          A memorized version of a function caches and returns the results of its call so that when it is called again
+          with the same input, it doesn't run
+          its computation but instead returns the results from cache.</h1>
+      <p>
+        That's a mouth full. Memoizing is using a function in a function to help a program remember past calculations.
+        This frees memory for the computer so it doesn't have to repeat the same calculations several times over.
+        This is a completely new concept (outside of recursion) for me, so sorry evaluators, I had to read up on this
+        from about six different blogs.
+      </p>
+
+      <!--
+      <script>
+        foo = function (x) {
+          console.log("calculating!");
+          memoize(foo);
+          return x + 5;
+        }
+
+        var memoizedFoo = memoize(foo);
+
+        memoizedFoo(5);
+
+        memoizedFoo(5);
+
+        memoizedFoo(10);
+      </script>
+    -->
+
+
+      <img src="http://vmbulletin.com/wp-content/uploads/2014/09/cow1.png" alt="cow" onclick="cowCounter()">
+      <table>
+        <tr>
+          <td>Clicks: </td>
+          <td id="cow"></td>
+        </tr>
+      </table>
+      <script>
+        var counter = 0;
+        function cowCounter() {
+          if (true) {
+            counter += 1;
+            document.getElementById('cow').innerHTML = counter;
+          }
+        }
+      </script>
+    </p>
+
+    <h1>In one year where do you hope to be?</h1>
+    <p>
+      In one year I hope to be a confident junior developer.
+      I hope to be a team member coworkers trust and value as part of the team.
+      I hope to be in a position to help newer developers, and be confident
+      in my work so that I can help new hires feel welcome during the on boarding
+      process.
+    </p>
+  </body>
+</html>
